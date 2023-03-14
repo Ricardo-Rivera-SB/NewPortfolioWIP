@@ -26,7 +26,7 @@ infoCard = document.querySelector(".info-card");
 
 /* LOGO HOVER ANIMATION */
 logo.forEach((letter) => {
-  letter.addEventListener("mouseenter", (event) => {
+  R.addEventListener("mousedown", (event) => {
     var t1 = anime.timeline({
       easing: "easeInOutSine",
       duration: 300,
@@ -211,8 +211,6 @@ about.forEach((item) => {
     nameD.classList.remove("hidden");
     nameO.classList.remove("hidden");
     infoCard.style.display = "grid";
-    document.getElementById("about").style.color = "yellow";
-    document.getElementById("homeMenu").style.color = "aliceblue";
   });
 });
 
@@ -267,7 +265,7 @@ contact.forEach((item) => {
 
 /* NAME CHANGE */
 nameContainer.forEach((item) => {
-  item.addEventListener("mouseenter", (event) => {
+  nameR.addEventListener("mousedown", (event) => {
     console.log("hovered");
     if (nameC.innerHTML === "C" && nameA.innerHTML === "A") {
       nameC.innerHTML = "V";
