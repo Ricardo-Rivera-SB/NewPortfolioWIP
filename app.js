@@ -186,18 +186,7 @@ contact.forEach((letter) => {
   });
 });
 
-logo.forEach((letter) => {
-  letter.addEventListener("mouseenter", (event) => {
-    if (menuHome.style.color == "aliceblue") {
-      menuHome.style.color = "yellow";
-    } else {
-      menuHome.style.color = "black";
-    }
-    if (menuHome.style.color == "black") {
-      menuHome.style.color = "aliceblue";
-    }
-  });
-});
+
 
 /* ABOUT TRANSFORMATION */
 about.forEach((item) => {
@@ -222,6 +211,57 @@ about.forEach((item) => {
     nameD.classList.remove("hidden");
     nameO.classList.remove("hidden");
     infoCard.style.display = "grid";
+    document.getElementById("about").style.color = "yellow";
+    document.getElementById("homeMenu").style.color = "aliceblue";
+  });
+});
+
+//Nav Item Color change on click
+about.forEach((item) => {
+  item.addEventListener("click", (event) => {
+    console.log("clicked");
+    document.getElementById("about").style.color = "yellow";
+    document.getElementById("homeMenu").style.color = "aliceblue";
+    document.getElementById("tech").style.color = "aliceblue";
+    document.getElementById("worksMenu").style.color = "aliceblue";
+    document.getElementById("contact").style.color = "aliceblue";
+    
+  });
+});
+
+tech.forEach((item) => {
+  item.addEventListener("click", (event) => {
+    console.log("clicked");
+    document.getElementById("tech").style.color = "yellow";
+    document.getElementById("homeMenu").style.color = "aliceblue";
+    document.getElementById("about").style.color = "aliceblue";
+    document.getElementById("worksMenu").style.color = "aliceblue";
+    document.getElementById("contact").style.color = "aliceblue";
+    
+  });
+});
+
+works.forEach((item) => {
+  item.addEventListener("click", (event) => {
+    console.log("clicked");
+    document.getElementById("worksMenu").style.color = "yellow";
+    document.getElementById("homeMenu").style.color = "aliceblue";
+    document.getElementById("about").style.color = "aliceblue";
+    document.getElementById("tech").style.color = "aliceblue";
+    document.getElementById("contact").style.color = "aliceblue";
+    
+  });
+});
+
+contact.forEach((item) => {
+  item.addEventListener("click", (event) => {
+    console.log("clicked");
+    document.getElementById("contact").style.color = "yellow";
+    document.getElementById("homeMenu").style.color = "aliceblue";
+    document.getElementById("about").style.color = "aliceblue";
+    document.getElementById("tech").style.color = "aliceblue";
+    document.getElementById("worksMenu").style.color = "aliceblue";
+    
   });
 });
 
