@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #023047;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.center {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.section {
+  text-align: center;
+}
+
+.title {
+  position: relative;
+  top: -5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+  position: absolute;
+  width: 100vw;
+  height: 100px;
+  top: 0;
+  background-color: #023047;
+  z-index: 20;
+  padding-top: 2rem;
+}
+
+nav ul {
+  display: flex;
+  padding-top: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 0 1rem;
+}
+
+nav ul li a {
+  font-size: 1.5rem;
+  display: flex;
+  color: aliceblue;
+}
+
+#homeMenu {
+  color: yellow;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15rem;
+  letter-spacing: 1rem;
+  width: 50px;
+}
+
+.D,
+.S,
+.G,
+.N:hover {
+  cursor: default;
+}
+
+.R a {
+  color: aliceblue;
+}
+
+.R:hover {
+  cursor: pointer;
+}
+
+.R {
+  color: aliceblue;
+}
+.dot {
+  color: red;
+}
+
+#name-container {
+  display: flex;
+  z-index: 20;
+}
+
+/* HERO PAGE ARROW */
+.arrow {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: aliceblue;
+  width: 20px;
+}
+
+.arrow:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+.arrow:hover .top {
+  transform: translateY(30px);
+}
+
+.arrow:hover .mid {
+  transform: translateY(15px);
+}
+
+.arrow .top {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform ease-in-out 0.5s;
+}
+.arrow .mid {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: transform ease-in-out 0.5s;
+}
+.arrow .btm {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* CARD STYLE */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  width: 600px;
+  background-color: #264653;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 50px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+
+/* INFO CARD */
+.info-card {
+  display: none;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-content: center;
+  justify-items: center;
+  text-align: justify;
+  line-height: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  width: 800px;
+  height: 500px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  color: aliceblue;
+}
+
+.info-card p {
+  padding: 2rem;
+}
+
+.info-card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 10rem;
+  width: 200px;
+  height: 50px;
+  background-color: aliceblue;
+  color: black;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom slide arrows
+ * --------------------------------------- */
+.my-arrow svg {
+  padding: 5px;
+}
+
+.my-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+  width: 70px;
+  height: 90px;
+  z-index: 99;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+.my-arrow.left {
+  left: 35px;
+}
+.my-arrow.right {
+  right: 35px;
+}
+polyline {
+  stroke-width: 3;
+}
+.my-arrow.left:hover polyline,
+.my-arrow.left:focus polyline {
+  stroke-width: 6;
+}
+.my-arrow.left:active polyline {
+  stroke-width: 10;
+  transition: all 100ms ease-in-out;
+}
+.my-arrow.right:hover polyline,
+.my-arrow.right:focus polyline {
+  stroke-width: 6;
+}
+.my-arrow.right:active polyline {
+  stroke-width: 10;
+  transition: all 100ms ease-in-out;
+}
+polyline {
+  transition: all 250ms ease-in-out;
+}
+
+/* NAV DOTS */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: red;
+}
