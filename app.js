@@ -59,7 +59,7 @@ logo.forEach((letter) => {
       });
     }
 
-    if (V.innerHTML == "V" && L.innerHTML == "L" && P.innerHTML == "P") {
+    if (V.innerHTML === "V" && L.innerHTML === "L" && P.innerHTML === "P") {
       V.innerHTML = "V";
       L.innerHTML = "L";
       P.innerHTML = "P";
@@ -208,7 +208,7 @@ about.forEach((item) => {
     });
     t3.add({
       targets: ".logo",
-      translateY: -200,
+      translateY: -100,
     });
     console.log("clicked");
     D.classList.add("hidden");
@@ -229,7 +229,7 @@ about.forEach((item) => {
 nameContainer.forEach((item) => {
   item.addEventListener("mouseenter", (event) => {
     console.log("hovered");
-    if (nameC.innerHTML == "C" && nameA.innerHTML == "A") {
+    if (nameC.innerHTML === "C" && nameA.innerHTML === "A") {
       nameC.innerHTML = "V";
       nameA.innerHTML = "E";
       nameD.innerHTML = "A";
